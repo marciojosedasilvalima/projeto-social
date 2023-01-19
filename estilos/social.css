@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Esconde a barra de rolagem lateral */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+img {
+    width: 100vw;            
+}
+
+a {
+    display: block; /* Faz o ACESSE ficar em baixo */
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder; /* deixa a letra mais grossa negrito */
+    text-decoration: none; /* Tira o sublinhado */
+}
+
+a:hover {
+    background-color: red;
+}
