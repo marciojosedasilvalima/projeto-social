@@ -8,19 +8,19 @@
 
 html, body {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     background-color: black;
 }
 
 body {
-    background: url(../imagens/fundo-madeira.jpg) no-repeat top center; 
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center; 
     background-size: cover;       /* Para cobrir a tela inteira */
     background-attachment: fixed; /* Fixar para não ter rolagem */
 }
 
-main {
-    position: relative;
-    height: 100vh;    
+main {    
+    height: 100vh;
+    position: relative;   
 }
 
 section#telefone {
@@ -32,4 +32,35 @@ section#telefone {
     height: 627px;
     width: 311px;
     background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative; 
+    top: 80px;
+    left: 22px;
+    width: 268px;
+    height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    /* Sombra nos botões */
+}
+
+section#redes-sociais img:hover { /* ao passar o mouse mexe os botões */
+    border: 2px solid rgba(255, 255, 255, 0.637); 
+   /* borda nos botões */
+   transform: translate(-3px, -3px);
+   /* mexe os botões para a esquerda e para cima */
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.795);
+   /* Aumenta a sombra nos botões */
+   transition: transform .3s, border 1s;
+   /* movimentação suave dos botões e a borda depois de 1 segundo */
 }
